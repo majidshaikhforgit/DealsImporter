@@ -1,6 +1,6 @@
 # CSVImporter Project Setup Guide
 
-* Server post and context : localhost:8082/DealsImporter
+* Server port and context : localhost:8082/DealsImporter
 
 * Create a schema named as "deals" (MYSQL DB used for connection)
 
