@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author webwerks
+ * @author Majid
  */
 @Repository
 public interface CurrencyAccumulativeCountRepository extends CrudRepository<CurrencyAccumulativeCount, Long> {

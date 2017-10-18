@@ -10,10 +10,8 @@ import java.nio.file.Paths;
 import java.util.concurrent.CompletableFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -46,7 +44,7 @@ public class DealsImportController {
 
   @RequestMapping(value = "/uploadfile", method = RequestMethod.POST)
   public @ResponseBody
-  String uploadFile(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
+  String uploadFile(@RequestParam("file") MultipartFile file) {
     if (!file.isEmpty() && file.getOriginalFilename().endsWith(".csv")) {
       log.info("File Name " + file.getOriginalFilename());
       try {

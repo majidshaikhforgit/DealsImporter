@@ -12,7 +12,7 @@ import com.main.service.DealsImporterServiceImpl;
 
 /**
  *
- * @author webwerks
+ * @author Majid
  */
 public interface DealsMapper {
   static Deal createDeal(String line) {

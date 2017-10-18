@@ -30,7 +30,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 /**
  *
- * @author webwerks
+ * @author Majid
  */
 @Slf4j
 @RunWith(SpringRunner.class)

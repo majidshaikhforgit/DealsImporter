@@ -15,7 +15,7 @@ import lombok.Setter;
 
 /**
  *
- * @author webwerks
+ * @author Majid
  */
 @Entity
 @Table(name = "currencyaccumulativecount")

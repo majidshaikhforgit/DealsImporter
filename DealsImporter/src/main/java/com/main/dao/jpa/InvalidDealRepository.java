@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author webwerks
+ * @author Majid
  */
 @Repository
 public interface InvalidDealRepository extends CrudRepository<InvalidDeal, Long> {
