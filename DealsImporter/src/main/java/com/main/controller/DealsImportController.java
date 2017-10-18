@@ -66,7 +66,6 @@ public class DealsImportController {
           CompletableFuture.supplyAsync(() -> importerService.processInputFile(storePath, file.getOriginalFilename())).thenAccept((result) -> {
             System.out.println("Process Completed : " + result);
           });
-//          new Thread(() -> importerService.processInputFile(storePath, file.getOriginalFilename())).start();
           return "File is processing please check the logs!!";
         } else {
           log.info("File Already Existing!");

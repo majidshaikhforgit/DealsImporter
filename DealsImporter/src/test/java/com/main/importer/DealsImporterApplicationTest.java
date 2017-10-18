@@ -87,9 +87,7 @@ public class DealsImporterApplicationTest {
   public void whenProcessInputFile_thenFileNotFound() {
     String inputFilePath = "/some/unexistingpath";
     String fileName = "deals.csv";
-
-    boolean success = dealImporterService.processInputFile(inputFilePath, fileName);
-    Assert.assertFalse(success);
+    Assert.assertFalse(dealImporterService.processInputFile(inputFilePath, fileName));
     log.debug("File does not exists : " + fileName);
 
   }
@@ -99,9 +97,7 @@ public class DealsImporterApplicationTest {
     String fileName = "deals.csv";
     String workingDir = System.getProperty("user.dir");
     String storePath = workingDir + "/uploads/";
-
-    boolean success = dealImporterService.processInputFile(storePath, fileName);
-    Assert.assertTrue(success);
+    Assert.assertTrue(dealImporterService.processInputFile(storePath, fileName));
     log.debug("File processed successfully : " + fileName);
 
   }

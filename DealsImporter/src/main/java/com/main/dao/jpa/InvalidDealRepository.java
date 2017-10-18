@@ -6,8 +6,6 @@
 package com.main.dao.jpa;
 
 import com.main.dao.entity.InvalidDeal;
-import com.main.dao.entity.ValidDeal;
-import java.io.Serializable;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
